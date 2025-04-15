@@ -8,7 +8,7 @@ const router = express.Router();
 router.get("/manager",verifyToken,allowRoles("admin","manager"),manager)
 
 //admin && manager
-router.get("/admin",verifyToken,allowRoles("manager"),admin)
+router.get("/admin",verifyToken,allowRoles("admin"),admin)
 
 
 //all
